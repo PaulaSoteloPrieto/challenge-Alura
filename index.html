@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+  <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.png" alt="logo alura" > 
+    </header>
+    <main class="contenedor"> 
+    <section class="contenedor__texto">
+            <div class="caja_texto">
+            <textarea class="text_area" placeholder="Ingrese el texto aquí"></textarea>
+            </div> 
+            
+            <h2 class="informacion">* Solo letras minusculas y sin acentos.</h2> 
+            
+            <div class="botones">
+                <button class="boton__encriptar" onclick="botonEncriptar()">Encriptar </button>
+                <button class="boton__desencriptar" onclick="botonDesencriptar()"> Desencriptar </button>
+            </div>
+    </section>
+    <section class="contenedor__encriptar"> 
+            <div class="muneco">
+                    <img src="imagenes/muñeco.png" alt="muñeco">
+            </div>           
+            <div class="mensaje__encriptado">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div> 
+            <textarea class="texto__resultado"></textarea>                                 
+            <div>                
+                <button class="boton__copiar" onclick="copiar()"> Copiar</button>
+            </div>
+            
+            
+            
+    </section>
+
+
+    </main>
+    <footer>
+    <p class="autor">*desarrollado por Paula Sotelo Prieto*</p>
+    </footer>
+    <script src="script.js"></script>
+     
